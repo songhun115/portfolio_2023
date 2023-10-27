@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    .section_1 {height: 400vh; background: #222;}
+.swiper-container {height: 100vh;}
+video{border-radius: 30px; width: 100%;}
+.slide01 {width: 100%; height: 100%; }
+.slide02 {width: 100%; height: 100%; background: blue;}
+.slide03 {width: 100%; height: 100%; background: +;}
+.slide04 {width: 100%; height: 100%; background: pink;}
+.project_navi ul li {}
+</style>
+<body>
+    <div class="section_1">
+        <div class="swiper-container">
+          <div class="swiper-wrapper project_list">
+            <div class="swiper-slide slide01">
+                <div class="project_video">
+                    <video src="video/nousgar.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="swiper-slide slide02">
+                <div class="project_video">
+                    <video src="video/butterum.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="swiper-slide slide03">
+                <div class="project_video">
+                    <video src="video/nousgar.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="swiper-slide slide04">
+                <div class="project_video">
+                    <video src="video/butterum.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="swiper-slide slide04">
+                <div class="project_video">
+                    <video src="video/nousgar.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="project_navi">
+                <ul>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+    speed: 500,
+    direction: 'vertical',
+    mousewheel: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    on: {
+      reachEnd: function () {
+        swiper.mousewheel.disable();
+      }
+    }
+  });
+  window.addEventListener('wheel', function (event) {
+    if (event.deltaY < 0) {
+      swiper.mousewheel.enable();
+    } else if (event.deltaY > 0) {
+    }
+  });
+      </script>
+      <script>
+        // var projects = ['·slide01', '·slide02','·slide03','·slide04',]
+        // const active = "swiper-slide-active"
+      
+        
+        $('.project_list .swiper-slide').each(function (index, item) {
+            
+            if($('.slide01').hasClass('swiper-slide-active')){
+                
+            }else if($('.slide02').hasClass('swiper-slide-active')){
+                
+            } else if($('.slide03').hasClass('swiper-slide-active')){
+                
+            } else if($('.slide04').hasClass('swiper-slide-active')){
+                
+            }
+            
+    
+
+    // item 과 this는 같아서 일반적으로 this를 많이 사용합니다.
+    // $(this).addClass('li_0' + index);
+});
+        
+      </script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+
+    <title>포인트관리</title>
+
+    <meta name="description" content="" />
+
+  
+    <link rel="stylesheet" href="../css/boxicons.css" />
+    <link rel="stylesheet" href="../css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../css/demo.css" />
+
+    <script src="../js/helpers.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">TheMoreShop</span>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <li class="menu-item active">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <div data-i18n="Analytics">환경설정</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="setting-service.html" class="menu-link">
+                    <div data-i18n="Without menu">서비스설정</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="setting-popup.html" class="menu-link">
+                    <div data-i18n="Without menu">팝업관리</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="setting-board.html" class="menu-link">
+                    <div data-i18n="Without navbar">공지사항 </div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="setting-parcel.html" class="menu-link">
+                    <div data-i18n="Container">분양관리</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <div data-i18n="Layouts">회원관리</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="member-management.html" class="menu-link">
+                    <div data-i18n="Without menu">회원관리</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="member-group.html" class="menu-link">
+                    <div data-i18n="Without navbar">그룹관리 </div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="member-recommend.html" class="menu-link">
+                    <div data-i18n="Container">추천관리</div>
+                  </a>
+                </li>
+             
+              
+              </ul>
+            </li>
+
+           
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <div data-i18n="Account Settings">결제관리</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="payment-deposit.html" class="menu-link">
+                    <div data-i18n="Account">입금관리</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="payment-withdraw.html" class="menu-link">
+                    <div data-i18n="Notifications">출금관리</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="payment-order.html" class="menu-link">
+                    <div data-i18n="Connections">주문관리</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="payment-point.html" class="menu-link">
+                    <div data-i18n="Connections">포인트관리</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <div data-i18n="Authentications">sns관리</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="auth-login-basic.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">none</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="auth-register-basic.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">none</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
+                    <div data-i18n="Basic">none</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <div data-i18n="Misc">통합관리</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="pages-misc-error.html" class="menu-link">
+                    <div data-i18n="Error">none</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="pages-misc-under-maintenance.html" class="menu-link">
+                    <div data-i18n="Under Maintenance">none</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+           
+          </ul>
+        </aside>
+        <div class="layout-page">
+          <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar" >
+             <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+            <div class="navbar-nav-right justify-content-end d-flex align-items-center" id="navbar-collapse">
+              <span>2023-04-26 22:17</span>
+              <span>&nbsp홍길동님 환영합니다</span>
+            </div>
+          </nav>
+          <div class="content-wrapper">
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+                <div class="container-fluid">
+                  
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown"\ aria-expanded="false" > Dropdown </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="javascript:void(0)">test1</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0)">test12</a></li>
+                          
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex" onsubmit="return false">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                      <button class="btn btn-outline-primary no-wrap"  type="submit">검색</button>
+                    </form>
+                  </div>
+                  <form class="d-flex" onsubmit="return false">
+                    <button class="btn btn-outline-primary no-wrap"  type="submit">신규</button>
+                  </form>
+                </div>
+              </nav>
+              <div class="card mb-4">
+                
+                <h5 class="card-header">팝업관리</h5>
+                
+                <hr class="my-0" />
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th><input class="form-check-input me-1" type="checkbox" value=""></th>
+                        <th>번호</th>
+                        <th>ID </th>
+                        <th>회원번호 </th>
+                        <th>사유 </th>
+                        <th>포인트</th>
+                        <th>지급일시</th>
+                        <th>관리</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>
+                          <input class="form-check-input me-1" type="checkbox" value="">
+                        </td>
+                        <td> <strong>01</strong></td>
+                        <td>developer90 </td>
+                        <td>48097930 </td>
+                        <td>주문 </td>
+                        <td>+ 50 P </td>
+                        <td>2023-01-07 </td>
+                        
+                        
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"> 확인 </a>
+                              
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input class="form-check-input me-1" type="checkbox" value="">
+                        </td>
+                        <td> <strong>01</strong></td>
+                        <td>developer90 </td>
+                        <td>48097930 </td>
+                        <td>10,000 포인트 전환 </td>
+                        <td>+ 50 P </td>
+                        <td>2023-01-07 </td>
+                        
+                        
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"> 확인 </a>
+                              
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <div class="demo-inline-spacing flex justify-content-center my-5 ">
+                    <!-- Basic Pagination -->
+                    <nav aria-label="Page navigation ">
+                      <ul class="pagination">
+                        <li class="page-item first">
+                          <a class="page-link" href="javascript:void(0);"
+                            ><i class="tf-icon bx bx-chevrons-left"></i
+                          ></a>
+                        </li>
+                        <li class="page-item prev">
+                          <a class="page-link" href="javascript:void(0);"
+                            ><i class="tf-icon bx bx-chevron-left"></i
+                          ></a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="javascript:void(0);">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">2</a>
+                        </li>
+                        <li class="page-item ">
+                          <a class="page-link" href="javascript:void(0);">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="javascript:void(0);">5</a>
+                        </li>
+                        <li class="page-item next">
+                          <a class="page-link" href="javascript:void(0);"
+                            ><i class="tf-icon bx bx-chevron-right"></i
+                          ></a>
+                        </li>
+                        <li class="page-item last">
+                          <a class="page-link" href="javascript:void(0);"
+                            ><i class="tf-icon bx bx-chevrons-right"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      
+
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/main.js"></script>
+    
+
+
+  </body>
+</html>

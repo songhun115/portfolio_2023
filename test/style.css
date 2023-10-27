@@ -1,0 +1,104 @@
+
+* {margin: 0; padding: 0; border: none;box-sizing: border-box;}
+/*�쒕옒洹� 諛⑹�*/
+body{  -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;overflow: hidden;-webkit-overflow-scrolling: touch;}
+/*湲곕낯 �고듃 �ㅽ���, 而щ윭*/
+body { color: #fff; overflow-x:hidden;overflow-y: scroll;}
+img{width: 100%;}
+.flex{display: flex;}
+.column{flex-direction: column;}
+.space{justify-content: space-between;}
+.align-center{align-items: center;}
+.just-center{justify-content: center;}
+.fff{color: #fff;}
+.slide-txt-wrap{overflow: unset;}
+
+.container{margin: 0 auto;width: 1680px;}
+.container-main{margin: 0 auto;width: 1680px;}
+.article-title{font-size: 32px;}
+.article-txt{font-size: 24px;}
+.line{width: 100%;height: 2px;background-color: #fff;margin: 40px 0 38px 0;}
+
+.platform .pm , .pb, .contact .contact-wrap, .contact header{background-color: #1e1e1e;}
+button a .platform-sub-title{color: #191919;}
+
+/*�대컮�� & 耳�由ъ뼱*/
+.about header{background-color: #000;}
+.about .about-wrap{z-index: 10;background-color: #000;position: relative;}
+.about .about-box{position: relative;width: 100%;height: fit-content;}
+.about .about-box ul .about-menu a{padding:15px 30px;background-color: #000;color: #999999;cursor: pointer;transition: 0.3s;height: 54px;line-height: 54px;text-align: center;}
+.about .about-article{background-color: #1e1e1e;overflow-x: hidden;}
+.about .about-history{background-color: #1e1e1e;}
+.about .about-vision, .about .about-value, .about .about-partnership, .about .about-history{padding-top: 174px;}
+.about-partnership, .about .about-history{padding-top: 185px;}
+.about .about-ani-wrap{padding:160px 0 186px 0;}
+.about .ani-box-top{min-width:390px;min-height: 390px;width: 100%;height: 100%;background-color: #000;border-radius: 25px;}
+.about .ani-box-bt{font-size: 16px;padding-top: 21px;text-align: center;}
+
+.about .about-partnership .article-title{text-align: center;padding-bottom: 80px;}
+
+@keyframes logo-set{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+
+
+.about .about-partnership{padding-bottom: 175px;}
+.about .article-title{padding: 20px 0 160px 0;font-weight: 500;}
+.about .since {font-size: 160px;font-weight: bolder;padding-right: 505px;width: 189px;}
+.about ul .since{padding-top: 40px;} 
+.about .since-wrap{font-size: 38px;font-weight: bolder;}
+.about .history-article li{font-size: 22px;position: relative;width: fit-content;margin-right: 0;padding-top: 0px;}
+.about .history-article li:first-child, .about .history-article li.first{padding-top: 105px;}
+.about .history-article li .dot{width: 10px;height: 10px;background-color: #fff;display: block;border-radius: 50%;margin-top: 14px;margin-right: 10px;}
+.about .history-article ul > div{width: fit-content;}
+.about .history-article ul.s1{margin-bottom: 182px;}
+.about .history-article ul.s6{padding-bottom: 260px;padding-top: 200px;}
+.about .about-history-ani{width: 100%;}
+.about .about-history-ani .history-article{width: 100%;}
+.about .since-ani{position:sticky;top: 440px;padding:40px 0 195px 0;height: fit-content;}
+.svg-elem-1 {-webkit-animation: animate-svg-stroke-1 10s  infinite;animation: animate-svg-stroke-1 10s  infinite;animation-timing-function: ease-in-out;}
+
+.go-btn1{width: 20px;background-color: inherit;float: right;padding-top: 160px;}
+.about .about-box{z-index: 2;}
+
+.open-pop{cursor: pointer;}
+@media (max-width: 1920px){
+    .container{padding:0 7.5rem;width: 100%;}
+}
+@media (max-width: 1420px){
+    .about .since{padding-right: 290px;}
+}
+@media (max-width: 1280px){
+  .container, .main .h100top{padding: 0 5rem;}
+}
+@media (max-width: 1024px){
+  .about .about-vision, .about .about-value, .about .about-partnership, .about .about-history{padding-top: 120px;}
+  .about ul .since{display: flex;}
+  .about ul .since .mb, .about .about-history-ani{display: block;}
+  .about .article-title{padding: 20px 0 80px 0;}
+  .about .since-ani.web{padding: 20px 0;top: 0;background-color: #1e1e1e;z-index: 1;width: 100%;}
+  .about .history-article ul{flex-direction: column;}
+}
+
+@media (max-width: 834px){
+  .about .about-vision, .about .about-value, .about .about-partnership, .about .about-history{padding-top: 80px;}
+  .article-txt br{display: none;}
+  .article-title, .about .value-sub-title{font-size: 20px;}
+  .article-txt, .about .value-article{font-size: 15px;}
+  .about .about-ani-wrap{padding: 124px 0 96px 0;}
+  .about .value-article{padding-top: 18px;}
+  .about .about-value-box{padding-bottom: 80px;}
+  .about .since{font-size: 40px;padding: 0;}
+  .about .since-wrap{font-size: 40px;}
+  .about-history .article-title{padding-bottom: 0;}
+  .about .since-ani.web{padding-top: 60px;}
+  .about .history-article li:first-child, .about .history-article li.first{padding-top: 40px;}
+  .about .history-article ul.s1{margin-bottom: 80px;}
+  .about .history-article ul.s6{padding-top: 80px;}
+  .about .about-box ul .about-menu a{font-size: 11px;}
+  .about .history-article li{font-size: 15px;}
+}
+@media (max-width: 720px){
+  .container, .main .h100top{padding: 0 1.5rem;}
+}
